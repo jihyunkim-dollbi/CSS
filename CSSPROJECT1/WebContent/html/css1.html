@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- 
+
+	CSS
+		=외부 CSS => (.css) 파일로 만들어서 불러서 갖다씀!
+			<link href=".css"> css로딩
+		
+		=내부 CSS
+			<head>
+			 	<style>
+			 	</style>
+			<head> 	
+			
+		=인라인CSS - 태그 하나에 적용
+			<h1 style="">
+  		 <h4 style="color: blue;font-family: 맑은 고딕;background-color: yellow">Hello CSS!!</h4>
+			==>중간에 입력값뒤에는 ; 붙이고 마지막 입력값에는 ;붙이지 않기!!
+		h1,h2,h3,h4,h5,h6{ 셀렉터 한번에 적용가능
+		
+		
+		
+		.h {  ==>h클래스 라면.... .이 클래스!
+		#hh{   ===> hh 아이디라면  id!
+		Selector (선택자)
+		
+		id 한개에만 부텨
+		class 여러개 동시에  부여 가능!
+		
+		body{ body안에 모든 데이터를 한번에 변경할때!!
+		
+		
+		#t1 .aa { 선택자
+
+			background-color: cyan
+			속성					값!
+
+}
+		
+		
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*)h1,h2,h3,h4,h5,h6{
+
+color: blue;
+background-color:yellow;
+font-family: 맑은 고딕
+
+}
+*/
+/* Selector (선택자) */
+
+.h {
+
+color: blue;
+background-color:yellow;
+font-family: 맑은 고딕
+
+}
+
+#hh{
+
+color: yellow;
+background-color:blue;
+font-family: 맑은 고딕
+
+
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<!-- 
+	
+		속성:값;
+		==== 사용자 정의는 없고 지정된 속성만 사용이 가능!
+		인라인 스타일 => 한줄씩!
+			
+	 -->
+	 
+	 <h1 id="hh">Hello CSS!!</h1>
+	  <h1 class="h">Hello CSS!!</h1>
+	   <h1>Hello CSS!!</h1>
+	    <h1>Hello CSS!!</h1>
+	     <h1 class="h">Hello CSS!!</h1>
+	      <h1>Hello CSS!!</h1>
+
+
+
+</body>
+</html>
