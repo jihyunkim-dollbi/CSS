@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- 
+	외부 CSS :파일
+		<link rel="stylesheet" href="css파일명">
+	내부 CSS :
+		<head>
+			<style type="text/css">
+			</style>
+		</head>
+	INLINE CSS:
+		<div style="">
+	
+	
+	1)외부, 내부 CSS
+	=============
+	1. 선택자(Selector) => Jquery, Jsoup : CSS를 적용할 tag찾는 것!
+		= tag: a, p, div ....
+			
+			형식)
+			
+			tag명{속성:값; 속성:값; 속성:값; ....} 구분=> ;
+				 ===
+				 이미 정의 되어있다. => 따라서 지정된 값만 넣어주면 ok!
+		
+		= ID명: (중복이 없는 명칭을 줄때) => 한번만 사용이 가능!
+				<div id="a b>"(x) 공백이 들어가면 a 와b 두개를 사용하겠다는 것임
+		
+			형식)
+			
+			#ID명{속성:값; 속성:값; 속성:값; ....}
+		
+		= Class명: (중복이 있는 경우 사용) => 여러개 사용이 가능!
+				<div class="a b c"> => 공백 단위로 여러개 사용 가능!
+				** 한개의 div에 여러개의 class를 사용하는 이유 => 
+				.a로 여러개에 적용되지만 그중 한개를 .b로 하고 싶은 경우 => <a b>로 사용!
+				
+			형식)
+			.class명 {속성:값; 속성:값; 속성:값; ....}
+			
+		= 전체를 나타낼때 : * (모든 태그) => 글꼴,...(통일성을 줘야할때..)
+		
+			형식)
+			*{속성:값; 속성:값; 속성:값; ....}
+			
+		= 가상 Selector :
+			a:hover (a태그에 갖다 대었다면..)
+			h1:nth-child(1, 2n..) 첫번째 위치, 짝수위치마다 바꿔줄때
+			
+			(ex)
+			
+			div에 border를 주면 사각형을 만들수 있다.
+			
+			6개 박스!
+			
+			div{
+			
+			border:2px 두깨(픽셀단위)
+			solid red (dot, -dot? 라인선종류)
+						
+			}
+			
+			그중 한박스를 바꿀때.
+			#bb{
+			
+			 green
+			}
+			
+			
+		= 소속관계 : 한칸을 띄어 소속을 알려줌.
+		id aa와 bb를 모두 제어
+		#aa, #bb{
+		
+		}
+		
+		div안에 id aa만 제어  => 한칸을 띄어서 소속관계를 알려줌.
+		div #aa{
+		
+		}
+		
+		=여러개 태그나 클래스, 아이디명	
+		
+		
+		
+		***	
+		div 블럭속성!
+		
+		***
+		<ul>
+			li 블럭속성
+		</ul>	
+		
+		***
+		<span></span> => 인라인 속성! 한 부분만 속성이나 값을 바꿔줄 수 있다!!
+		<span> 에서...visible =? false! => 숨겨진 댓글, 더보기!
+		
+		***
+		float:left 왼쪽에 붙여라~
+		
+		padding: div와 안에 들어간 객체와의 거리 
+		marging : div밖의 객체와 div간의 거리	
+			
+		0.25em => *4px
+		em px point
+		==> px은 해상도에 맞춰있기때문에 그 해당 컴퓨터에 따라 다르게 된다??
+		
+		
+		
+		
+		
+		
+		
+				
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	width:100px;
+	height: 100px;
+}
+#aa{
+    border: 5px solid green;
+}
+#bb{
+    border: 5px dotted green;
+}
+#cc{
+    border: 5px dashed green;
+}
+#dd{
+    border: 5px double green;
+}
+#ee{
+    border: 5px groove green; 
+}
+#ff{
+    border: 5px ridge green;
+}
+#aaa{
+    padding: 20px; /* 20px 30px 20px 30px  => div 안에 위아래왼쪽오른쪽 띄는 간격!*/
+    
+    /*  top left bottom right 
+    	padding: 20px 10px 30px ()==> 생략경우 10px을 그대로 쓰겠다!!
+    	padding: 20px => 4군데 모두 동일하게 하겠다!! 
+    	padding-left,padding-right,padding-top,padding-bottom ==> 한개만 값을 지정할때!!
+    	
+     */
+    
+    border:1px solid black;
+}
+</style>
+</head>
+<body>
+	<div id="aaa">Box Model</div>
+	<div id="aa"></div>
+	<div id="bb"></div>
+	<div id="cc"></div>
+	<div id="dd"></div>
+	<div id="ee"></div>
+	<div id="ff"></div>
+</body>
+</html>
