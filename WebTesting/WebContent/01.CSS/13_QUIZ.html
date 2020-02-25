@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+
+	id는 한개의 고유네임을 한개에만 뷰여
+	class는 한개의 고유네임을 여러 tag에 복수로 부여가능!!
+    css 파일을 따로 만들어서 link tag로 끌어온다!
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="13_QUIZ_STYLE.css">
+
+
+</head>
+<body>
+	<div id="sub" align="center">
+		<form class="form_style">
+			<div class="title">
+				<label>이름</label>
+				<input type="text" name="name" size="12" />
+				
+				<label style="margin-left: 20px;">비밀번호</label>
+				<input type="password" name="password" size="12" />
+			</div>
+			<div class="content">
+				<textarea rows="5" cols="53" name="message"></textarea>
+			</div>
+			<div class="title" style="text-align:right;">
+				<input type="submit" value="확인" />
+				<input type="reset" value="취소" />
+			</div>
+			<div>
+				<input type="month">
+			</div>
+			<div>
+				<input type="search">
+			</div>
+			<div>
+				<input type="search">
+			</div>
+			
+			
+	   </form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+	
+	div tag를 기준점으로 잡으면 안된다!!
+	블락 단위로 기준점을 잡기!!
+	기준이 되는 것에 id를 준다!!
+	전체 큰 블락은 id로 하고 그 안에 있는 것은 class로!!
+	div => 기능이 없이 블락단위로 나누기 위해 많이 쓰임!! 블락이라 편함!
+	
+	#school .student1 => 해당 id에 해당 하는 class를 함께 지정해줌! 찾기 편함!
+	
+	중복성 제거, 결합도 낮추고, 가독성!!
+	html 상속관계!
+	
+	
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	#school{
+		color: green;
+	}
+
+	#school .student1{
+		font-size: 20px;
+		text-decoration: underline;
+	}
+	#school .student2{
+		color: blue;
+		font-size: 40px;
+		font-weight: 300;
+		font-stretch: extra-condensed;
+	
+	}
+
+</style>
+</head>
+<body>
+	<div id="school">
+		<div class="student1">
+			<dl>
+				<dt>이름</dt>
+				<dd>조인성</dd>
+			</dl>
+			
+			<dl>
+				<dt>학과</dt>
+				<dd>전자과</dd>
+			</dl>
+			
+		</div>
+		
+		<div class="student2">
+			<dl>
+				<dt>이름</dt>
+				<dd>김태희</dd>
+			</dl>
+			
+			<dl>
+				<dt>학과</dt>
+				<dd>기계과</dd>
+			</dl>
+			
+		</div>
+		
+	</div>
+</body>
+</html>

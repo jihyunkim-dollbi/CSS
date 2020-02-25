@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+
+	선택자 => 조상 / 부모 / 자식 / 후손!
+		
+	테그 - 테그
+	테그 - 텍스트
+	기준점에 따라 바뀐다!
+
+ -->
+ 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+ 	자식/후손, 부모(jqeury)/조상, 형제(손위, 손아래)
+ 	자식: 선택자 > 선택자 {   }
+ 	후손: 선택자 선택자 {   }
+ 	
+ 	블락으로 기준이 되는 것에 id부여!
+
+	ul의 menu1과 4를 가져오고 싶다 =>class사용!
+
+
+*/
+	li{
+		list-style-type: none;	
+	}
+	#one > li.menu{
+		color:#00ff00;
+	}
+	
+	#two > .menu{
+		color:#ff0000;
+	}
+
+	#one > li.menu, #two > li.menu{
+	font-weight: bold;
+	font-size: 30px;
+	}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+	<ul id="one">
+		<li class="menu">MENU1</li>
+		<li>MENU2</li>
+		<li class="menu">MENU3</li>
+		<li>MENU4</li>
+		<li class="menu">MENU5</li>
+	
+	</ul>
+	
+	<ol id="two">
+		<li class="menu">MENU1</li>
+		<li>MENU2</li>
+		<li class="menu">MENU3</li>
+		<li>MENU4</li>
+		<li class="menu">MENU5</li>
+	
+	</ol>
+	
+	
+	
+</body>
+</html>

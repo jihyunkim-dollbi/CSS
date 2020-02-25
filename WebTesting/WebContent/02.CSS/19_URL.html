@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+
+ 가장 바깥쪽은 px로 잡고
+ 그 안에 블럭들은 %로 잡아야 깨지는 것 방지!
+ CSS 단위 : em , % , px
+ 
+ 웹은 상대경로!!
+ 
+  	현재 폴더 ./
+ 	상위폴더 개수만큼 ../
+ 	상위폴더가 같아지면 => 사진 들어있는 가장 상위 폴더  /폴더명
+ 	하위폴더 개수만큼  절대경로와 같이 접근!
+	
+	/*  CSS 단위: 16px 100%  1.0em   */
+	
+ -->
+ 
+ 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>단위</title>
+<style type="text/css">
+
+	#wrap{
+		width:800px; 
+		height:500px;
+		margin: 0px auto;
+		border: 1px solid #cccccc;
+	
+	}
+
+	#content1{
+		width:80%;
+		height:50%;
+		margin:0px auto; 
+		border: 1px solid red;
+		/* CSS 단위: 16px 100%  1.0em   */
+		font-size: 1.5em;
+		background-image: url("./../image/m1.png");
+		background-repeat: no-repeat;
+		
+	}
+	
+	#content2{
+		width: 500px;
+		height:230 px;
+		margin: 20px auto;
+		font-size:2.0em;
+		color: #ffffff;
+		text-align: center;
+		line-height:230px;
+		
+		background-image: url("https://t1.daumcdn.net/daumtop_chanel/op/20170315064553027.png");
+		background-repeat: no-repeat;
+	
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content1">해당 이미지는 저작권 보호를 받습니다.</div>
+        <div id="content2">해당 이미지는 저작권 보호를 받습니다.</div>
+        <div id="content3">해당 이미지는 저작권 보호를 받습니다.</div>
+    </div>
+ 
+
+     <img alt="이미지 없음" src="./../image/m1.png"/>
+     <img src="https://t1.daumcdn.net/daumtop_chanel/op/20170315064553027.png"/>
+    
+</body>
+</html>

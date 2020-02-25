@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+#sub{
+	
+	margin:200px auto;
+}
+
+.form{
+	
+	border:solid 0px white;
+	width:450px;
+	height:450px;
+	
+	
+}
+
+
+.form > .first{
+	
+	width: 450px;
+	height: 40px;
+	border: solid 2px cyan;
+	
+}
+
+
+.form > .list{
+	
+	width: 450px;
+	height: 40px;
+	border: solid 0px cyan;
+	
+}
+
+.form > .second{
+	
+	width: 450px;
+	height: 200px;
+	border: solid 2px cyan;
+	
+}
+
+.form > div > .one{
+	
+	border: solid 2px blue;
+	width:140px;
+	height: 38px;
+	float:left;
+	text-align:right;
+	
+}
+
+
+.form > div > .two{
+	
+	border: solid 2px red;
+	width: 250px;
+	height: 38px;
+	float:left;
+	margin-left: 10px;
+	line-height: 7px;
+}
+
+.first > .textarea{
+	
+	border: solid 2px red;
+	margin-left: 10px;
+	width: 250px;
+	height: 230px;
+	float:left;	
+}

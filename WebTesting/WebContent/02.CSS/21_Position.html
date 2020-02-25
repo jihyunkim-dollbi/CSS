@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POSITION</title>
+
+<style type="text/css">
+	div{
+	
+		width:100px;
+		height:100px;
+		margin-left: 10px;
+		margin-top: 10px;
+	
+		/* position : 디폴트 static(tag가 순차적으로 쌓인다!) */
+		position: static;
+	
+	}
+	 
+	div:nth-child(1){
+	
+		background-color: red;
+	
+	}
+	
+	div:nth-child(2){
+	
+		background-color: green;
+	
+	}
+	
+	div:nth-child(3){
+	
+		background-color: blue;
+	
+	}
+	
+	
+</style>
+</head>
+<body>
+  	<div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
