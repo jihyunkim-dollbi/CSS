@@ -3,10 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <title>POSITION</title>
+<style type="text/css">
+	/*
+		position: absolute 절대위치(기준 부모)를 기준으로 이동
+		margin과 padding을 사용x
+	
+	*/
+
+	div{
+		/* 기준: body */
+		width:100px;
+		height:100px;
+			
+	}
+	div:nth-child(1){
+		/* 기준: body */
+		background-color: red;
+		position: absolute; /* 절대위치 - 모두 같은 위치로 들어감! 모든 div가 브라우저에 절대위치! 
+											=> margin과 padding을 함꼐 사용x*/
+		top:0px; left:0px;
+		
+	}
+	
+	div:nth-child(2){
+		/* 기준: body */
+		background-color: green;
+		position: absolute; /* 절대위치 */
+		top:50px; left:50px;
+	}
+	
+	div:nth-child(3){
+		/* 기준: body */
+		background-color: blue;
+		position: absolute; /* 절대위치 */
+		top:100px; left:100px;
+	}
+	
+	#wrap{
+		/* 기준: body */
+		width:300px;
+		height:300px;
+		opacity: 0.7;
+		background-color: pink;
+		top:300px; 
+		left:300px;
+		position: absolute;
+	
+	}
+	
+	#content{
+		/* 기준: wrap */
+		width:100px;
+		height:100px;
+		opacity: 0.9;
+		background-color:yellow;
+		top: 100px; 
+		left: 100px;
+		position: absolute;
+	
+		/* 부모가 wrap이기때문에 wrap을 기준으로 100/100 top/left가 된다!   */
+	}
+	
+</style>
 </head>
 <body>
   	<div></div>
     <div></div>
     <div></div>
+    <div id="wrap">
+    	<div id="content"></div>
+    </div>
 </body>
 </html>

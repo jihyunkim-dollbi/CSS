@@ -3,6 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>POSITION</title>
+<style type="text/css">
+	/* position: fixed 고정위치(절대적 위치랑 동일), 스크롤 내려도 항상 브라우저기준상 동일 화면에서 보여진다.*/
+	
+	div{
+		/* 기준: body */
+		width:100px;
+		height:100px;
+			
+	}
+	div:nth-child(1){
+		/* 기준: body */
+		background-color: red;
+		position: fixed; /* 부모를 기준으로 브라우저에 항상 고정됨!!  */
+		top:0px; left:0px;
+		
+	}
+	
+	div:nth-child(2){
+		/* 기준: body */
+		background-color: green;
+		position: absolute; /* 절대위치 */
+		top:50px; left:50px;
+	}
+	
+	div:nth-child(3){
+		/* 기준: body */
+		background-color: blue;
+		position: absolute; /* 절대위치 */
+		top:100px; left:100px;
+	}
+	
+	#wrap{
+		/* 기준: body */
+		width:300px;
+		height:300px;
+		opacity: 0.7;
+		background-color: pink;
+		top:300px; 
+		left:300px;
+		position: absolute;
+	
+	}
+	
+	#content{
+		/* 기준: wrap */
+		width:100px;
+		height:100px;
+		opacity: 0.9;
+		background-color:yellow;
+		top: 10px; 
+		left: 10px;
+		position: absolute;
+		
+	}
+	
+</style>
 </head>
 <body>
   	<div></div>
@@ -10,7 +66,7 @@
     <div></div>
 
     <div id="wrap">
-        <div class="content"></div>
+        <div id="content"></div>
     </div>
 </body>
 </html>

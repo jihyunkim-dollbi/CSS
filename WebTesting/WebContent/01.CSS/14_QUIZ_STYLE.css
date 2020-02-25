@@ -19,7 +19,7 @@
 	
 	width: 450px;
 	height: 40px;
-	border: solid 2px cyan;
+	border: solid 0px cyan;
 	
 }
 
@@ -36,24 +36,25 @@
 	
 	width: 450px;
 	height: 200px;
-	border: solid 2px cyan;
+	border: solid 2px black;
 	
 }
 
 .form > div > .one{
 	
-	border: solid 2px blue;
+	border: solid 0px blue;
 	width:140px;
 	height: 38px;
 	float:left;
 	text-align:right;
+	 line-height: 50%;
 	
 }
 
 
 .form > div > .two{
 	
-	border: solid 2px red;
+	border: solid 0px red;
 	width: 250px;
 	height: 38px;
 	float:left;
@@ -63,7 +64,7 @@
 
 .first > .textarea{
 	
-	border: solid 2px red;
+	border: solid 0px red;
 	margin-left: 10px;
 	width: 250px;
 	height: 230px;

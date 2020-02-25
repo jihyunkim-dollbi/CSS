@@ -3,6 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <title>POSITION</title>
+<style type="text/css">
+	/* */
+	#red{
+		/* margin은 디폴트값 3px; */
+		width:100px;
+		height:100px;
+		background-color: red;
+	}
+	
+	#yellow{
+	
+		width:400px;
+		height:500px;
+		background-color:yellow; 
+		position: relative; /* static을 기준으로 떨어짐! static이었을 본인의 자리가 기준이 됨! margin과 padding을 사용x */
+		top: 50px;
+		left: 50px;
+	}
+	#pink{
+	
+		width:100px;
+		height:100px;
+		background-color: pink;
+		position: relative;
+		top: 100px; left:100px;
+		/* 주위 파일이relative라면 기준이 그 파일의 static형일때가 된다.  */
+	}
+	#green{
+	
+		width:100px;
+		height:100px;
+		background-color: green;
+		position: relative;
+		top: 100px; left:100px;
+	}
+	
+</style>
 </head>
 <body>
   	<div id="red"></div>
@@ -10,6 +47,8 @@
     	<div id="green"></div>
     	<div id="blue"></div>
     </div>
+    
     <div id="pink"></div>
+    
 </body>
 </html>
