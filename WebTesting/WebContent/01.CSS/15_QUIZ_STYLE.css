@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+#sub{
+	
+	margin: 400px auto;
+	
+}
+
+.form_style{
+	
+	border:solid 2px red;
+	width: 600px;
+	height: 500px;
+
+}
+
+.row{
+	
+	border:solid 1px blue;
+	width: 600px;
+	height:	 9%;
+	
+}

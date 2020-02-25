@@ -3,6 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>OverFlow</title>
+<style type="text/css">
+	
+	#row1{
+	
+		width:500px;
+		height:150px; /* 전체 블락의 경우 height는 생략해줘야 안에 들어가는 자식블락들의 크기가 자유롭게 들어갈수있다. */
+		margin: 0px auto;
+		border: 5px solid #dddddd;
+		/* 부모의 크기를 over할 경우 자식은 안으로 들어감!! */
+		overflow: hidden;
+	}
+	
+	#row1 > #first{
+		
+		width:100px;
+		height:150px;
+		border: 5px solid #cccccc;
+		margin: 5px;
+	
+	}
+	#row1 > #second{
+	
+		width:100px;
+		height:150px;
+		border: 5px solid #cccccc;
+		margin: 5px;
+	
+	}
+	
+	#row2{
+	
+		width:500px;
+		margin: 0px auto;
+		border: 5px solid #dddddd;
+		overflow: hidden;
+		margin-top: 2px;
+	}
+	
+	#row2 > #first{
+		
+		width:100px;
+		height:150px;
+		border: 5px solid #cccccc;
+		margin: 5px;
+		float:right;
+	}
+	#row2 > #second{
+	
+		width:100px;
+		height:150px;
+		border: 5px solid #cccccc;
+		margin: 5px;
+		float:right;
+	}
+	
+</style>
 </head>
 <body>
     <div id="row1">
