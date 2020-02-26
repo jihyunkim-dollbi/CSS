@@ -3,12 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <title>웹포트</title>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Lacquer|Libre+Baskerville|Odibee+Sans&display=swap" rel="stylesheet">
+<style type="text/css">
+
+	header {
+	
+		width: 90%;
+		height: 180px;
+		border: 1px solid #cccccc;
+		margin: 0px auto; /* 가운데 정렬 */
+		overflow: hidden; /* 자식 사이즈에 맞춰지나 옆으로 마출땐 깨지니까 반드시 해줘야함!  */
+	
+	}
+
+	header > #gnb {
+	
+		width: 400px;
+		height:80px;
+		border: 1px solid blue;
+		float:left;	
+
+		
+	}
+	
+	header > #lnb {
+	
+		width: 400px;
+		height:80px;
+		border: 1px solid red;
+		float:right;
+		position:relative;
+		top:100px;
+		
+	}
+	
+	
+	header li {
+	
+		list-style-type: none;
+		
+	}
+	
+	header a{
+	
+		text-decoration: none;
+	}
+	
+	
+	header > #gnb li,header > #lnb li{
+	
+		width:70px;
+		height:30px;
+		border: 1px dotted #cccccc;
+		text-align: center;
+		line-height: 30px;
+		float:left;	
+		
+	
+		
+	}
+	
+	header > #gnb > ul {
+	
+		/*  padding-left: 40px;  */
+		
+	}
+	
+	
+	header > #lnb > ul {
+	
+		/* relative는 margin과 padding이 작용안한다. right & top만 사용 가능! 부모에서 높이 잡아줘야함! */
+	
+	}
+	
+	#content {
+	
+		width: 90%;
+		border: 1px solid #cccccc;
+		margin: 4px auto; /* 가운데 정렬 */
+		
+		overflow: hidden;
+	
+	}
+	
+	#content > #section, #content > #aside  {
+		
+		height: 600px;
+		border: 1px solid #cccccc;
+		font-weight: bold;
+		margin: 5px; /* 가운데 정렬 */
+		font-size: 1.2em;
+		float:left;
+		
+	}
+	
+	#content > #section {
+		
+		width: 80%;
+		font-family: 'Libre Baskerville';
+		
+	
+	}
+	
+	#content > #aside {
+		
+		width: 18%;
+	
+	}
+	
+	footer {
+	
+		width: 90%;
+		height: 200px;
+		border: 1px solid #cccccc;
+		line-height :200px;
+		font-weight: bold;
+		font-size: 2.0em;
+		text-align: center;
+		margin: 4px auto;
+		font-family: 'Indie Flower';
+	
+	}
+	
+</style>
 </head>
 <body>
  	<header>
         <div id="gnb">
             <ul>
-                <li><a href="#none">gnb01</a></li>
+                <li style="margin-left:0px;"><a href="#none">gnb01</a></li>
                 <li><a href="#none">gnb02</a></li>
                 <li><a href="#none">gnb03</a></li>
                 <li><a href="#none">gnb04</a></li>
@@ -25,6 +148,7 @@
             </ul>
         </div>
     </header>
+    
     
     <div id="content">
         <div id="section"> It is a professional display space in which exhibitions under diverse subjects including the cultural contents are held. Such exhibitions include the ARTTOON ART, Exhibition for 100 Modern Cartoonists of Korea, and SF Mania Exhibition. </div>

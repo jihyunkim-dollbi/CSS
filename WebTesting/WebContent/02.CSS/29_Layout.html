@@ -3,15 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <title>레이 아웃</title>
+<style type="text/css">
+	*{
+	
+		font-weight: bold;
+	
+	}
+
+	div{
+	
+		border: 1px solid #cccccc;
+		margin: 5px;
+		text-align: center;
+		
+	}
+
+	#con{
+	
+		width:65%;
+		margin: 0px auto;
+			
+	}
+	#con > #header{
+	
+		height: 200px;
+		line-height: 200px;
+		font-size: 2.0em;
+		font-weight: bold;
+	
+	}
+	
+	#con > #nav{
+	
+		height:150px;
+	
+	}
+	
+	#nav > p{
+		
+		font-size: 1.5em;
+	}
+	
+	#nav > ul > li{
+		
+		width: 200px;
+		height: 40px;
+		border: 1px solid #dddddd;
+		float:left;
+		list-style-type: none; /* li의 디폴트 속성을 없애고.. */
+		line-height: 40px; 
+		font-size: 18px;
+		border-left-width: 0px;
+		
+	}
+	
+	#con > #wrap{
+	
+		overflow: hidden; /* 자식 높이네 맞추겠다~*/
+	
+	}
+
+	#wrap > #content, #wrap > #banner{
+	
+		height: 500px;
+		float: left;
+		line-height: 500px;
+		text-align: center;
+		font-size:1.5em;
+		
+	}
+
+	#wrap > #content {
+	
+		width:80%;
+	
+	}
+
+	#wrap > #banner {
+	
+		width: 18%;
+	
+	}
+	
+	#con > #footer {
+	
+		height: 300px;
+		line-height: 300px;
+		font-size: 2.0em;
+	
+	}
+	
+	
+</style>
 </head>
 <body>
 	<div id="con">
 	       <div id="header"> HEADER</div>
-	
 	       <div id="nav">
 		           <p>NAVIGATION</p>
 		           <ul>
-		               <li>menu1</li>
+		               <li style="border-left-width: 1px; margin-left: 40px;">menu1</li>
 		               <li>menu2</li>
 		               <li>menu3</li>
 		               <li>menu4</li>
