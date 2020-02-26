@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+
+#content{
+	
+	width:1024px;
+	border: 0px solid red;
+	margin:0px auto;
+	overflow: hidden;
+	
+}
+
+
+#content > #main_nav,
+#content > #main,
+#content > #main_banner{
+	
+	border:0px solid blue;
+	float:left;
+	margin-left :3px;
+}
+
+#content > #main_nav{
+	margin-top:10px;
+	width:200px;
+	border:1px solid #cccccc;
+	
+}
+
+#content > #main_nav li{
+
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+#content > #main{
+	
+	width:647px;
+	
+}
+
+#content > #main > div{
+	
+	width: 647px;
+	border: 1px solid #cccccc;
+	margin-top:10px;
+	
+}
+
+#content > #main > div:nth-child(1){
+
+	height:280px;
+	
+}
+
+#content > #main > div:nth-child(2){
+
+	height:240px;
+	
+}
+
+#content > #main > div:nth-child(3){
+
+	height:60px;
+	overflow: hidden;
+	background-color: #500095;
+	line-height:60px;
+}
+
+#content > #main > div:nth-child(3) li{
+
+	border: 0px solid red;
+	width:101px;
+	height:50px;
+	color: #ffffff;
+	font-size: 0.9em;
+	float:left;
+	
+}
+
+#content > #main > div:nth-child(3) ~ div{
+	/* 4,5,6div 모두! */
+	
+	height: 150px;
+	
+}
+
+
+#content > #main_banner{
+	
+	width:159px;
+	margin-left:5px;
+}
+
+#content > #main_banner > div{
+	
+	width:156px;
+	border:1px solid #cccccc;
+	margin-top:10px;
+	
+}
+
+#content > #main_banner > div:nth-child(1),
+#content > #main_banner > div:nth-child(2){
+	
+	height:180px;	
+	
+}
+
+#content > #main_banner > div:nth-child(3){
+	
+	height:200px;	
+	
+}
+
+#content > #main_banner > div:nth-child(4){
+	
+	height:200px;	
+	
+}
+
+#content > #main_banner > div:nth-child(5){
+	
+	height:180px;	
+	
+}
