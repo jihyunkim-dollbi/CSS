@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+
+*{
+	
+	margin:0px;
+	
+}
+
+a{
+	
+	text-decoration: none;
+	
+}
+
+li{
+	
+	list-style-type: none;
+	
+}
+
+header{
+	
+	border: 1px solid blue;
+	width: 100%;
+	height: 500px;
+	background-image: url("./../image/yelpheader.jpg");
+		
+}
+
+header > #header_1 {
+	
+	width:1024px;
+	height: 120px;
+	border: 1px solid yellow;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+header > #header_1 > .header_1_1{
+	
+	width: 420px;
+	height: 120px;
+	border:3px solid blue;
+	margin-left: 10px;
+	
+	
+}
+
+
+header > #header_1 > .header_1_1 > ul{
+
+	margin-top: 30px;
+	
+}
+
+header > #header_1 > .header_1_1 li{
+
+	width: 115px;
+	height: 50px;
+	border: 1px solid yellow;
+	color : #FFFFFF;
+	font-size:14px;
+	font-weight: bold;
+	float:left;
+	line-height: 50px;
+	
+	
+}
+
+
+header > #header_1 > .header_1_2 {
+	
+	width: 400px;
+	height: 120px;
+	border:1px solid white;
+	margin-right: 10px;
+	
+}
+
+
+header > #header_1 > .header_1_2 > ul {
+
+	margin-top: 30px;
+	
+}
+
+
+header > #header_1 > .header_1_2 li:nth-child(1) {
+	
+	
+	width: 110px;
+	height: 45px;
+	border: 1px solid white;
+	color : #FFFFFF;
+	font-weight: bold;
+	float:left;
+	line-height: 45px;
+	font-size:14px;
+}
+
+
+header > #header_1 > .header_1_2 li:nth-child(2) {
+	
+	
+	width: 80px;
+	height: 45px;
+	border: 1px solid white;
+	color : #FFFFFF;
+	font-size:14px;
+	font-weight: bold;
+	float:left;
+	line-height: 45px;
+	
+}
+
+header > #header_2 {
+	
+	width:160px;
+	height: 80px;
+	border: 1px solid red;
+	margin: 0 auto;
+	margin-top:100px;
+	margin-bottom: 70px;
+	
+}
+
+
